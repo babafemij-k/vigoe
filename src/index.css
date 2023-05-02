@@ -1,0 +1,38 @@
+.App {
+  min-height: 100vh;
+  background-color: #fff;
+  /* background-color: #01070d; */
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro-Bold";
+  src: url("/fonts/AvenirNextLTPro-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNextLTPro-It";
+  src: url("/fonts/AvenirNextLTPro-It.otf") format("truetype");
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("/fonts/AvenirNextLTPro-Regular.otf") format("truetype");
+}
+
+@media (max-width: 480px) {
+  .chakra-modal__content {
+    max-height: 100vh !important;
+    overflow-y: scroll !important;
+  }
+}
+
+/* input,
+textarea,
+select {
+  border: 1px solid blue;
+  outline: yellow;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: blue;
+} */
