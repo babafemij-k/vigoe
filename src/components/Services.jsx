@@ -34,7 +34,7 @@ export default function Services() {
           as={motion.p}
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition="0.5s linear"
+          transition="0.5s ease"
         >
           Our Services
         </Heading>

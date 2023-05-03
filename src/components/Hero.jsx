@@ -23,7 +23,7 @@ export default function Hero() {
         w={{ base: "unset", md: "30%" }}
         fontFamily={"AvenirNextLTPro-Bold"}
         as={motion.p}
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition="0.5s ease"
         // animate={{ x: 100 }}
