@@ -19,6 +19,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/logo.png";
 import { motion, motionValue } from "framer-motion";
 
@@ -34,13 +35,18 @@ function Navigation({
   return (
     <Flex
       // bg="black"
-      px={"10"}
+      px={{ base: "5", md: "10" }}
       py={"10"}
       alignItems="center"
       width={"100vw"}
       color={"white"}
     >
-      <Image src={logo} alt="Logo" w={{ base: "60%", md: "unset" }} />
+      <Image
+        src={logo}
+        alt="Logo"
+        w={{ base: "75%", md: "18rem" }}
+        h={{ base: "75%", md: "unset" }}
+      />
 
       {isLargerThan768 ? (
         <>
@@ -101,10 +107,12 @@ function Navigation({
           <Spacer />
           <IconButton
             aria-label="Navigation Menu"
-            icon={<HamburgerIcon />}
+            icon={<GiHamburgerMenu />}
             onClick={onOpen}
             variant="outline"
+            size="sm"
           />
+
           {!showModal && !showContractorModal && (
             <Drawer
               isOpen={isOpen}

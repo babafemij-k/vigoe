@@ -12,6 +12,7 @@ import {
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { motion } from "framer-motion";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function AboutUs({ onContactClick }) {
   return (
@@ -72,7 +73,7 @@ export default function AboutUs({ onContactClick }) {
         >
           <Flex alignItems={"flex-end"} gap={"0.8rem"} fontWeight={"semibold"}>
             <Link>
-              <Icon as={GrMail} />
+              <Icon as={FaPhoneAlt} />
             </Link>
             <Text>647-232-5136</Text>
             <Text>613-263-1891</Text>
@@ -83,9 +84,6 @@ export default function AboutUs({ onContactClick }) {
           </Text>
 
           <Flex alignItems={"center"} gap={"1rem"}>
-            <Link>
-              <Icon as={GrMail} />
-            </Link>
             <Link>
               <Icon as={FaLinkedinIn} />
             </Link>

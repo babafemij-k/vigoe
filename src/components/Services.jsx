@@ -19,7 +19,7 @@ export default function Services() {
       //   ml={{ base: "", md: "6rem" }}
       flexDirection={{ base: "column", md: "row" }}
       color={"white"}
-      minHeight={"100vh"}
+      minHeight={"85vh"}
       position={"relative"}
       ml={{ base: "", md: "6rem" }}
       bg={`url(${icon}) no-repeat bottom right`}
@@ -38,7 +38,12 @@ export default function Services() {
         >
           Our Services
         </Heading>
-        <Text mb={8} w={{ base: "100%", md: "60%" }}>
+        <Text
+          mb={8}
+          w={{ base: "100%", md: "60%" }}
+          fontSize={"1rem"}
+          fontWeight={"semibold"}
+        >
           We are a team of dedicated and well experienced consultants focused on
           providing world class technology implementation solutions. Our
           offerings include:
@@ -47,31 +52,57 @@ export default function Services() {
           <li>
             <Box as="span" display={"flex"} alignItems={"center"} mb={"1.5rem"}>
               <Image w={"1.5rem"} src={serviceOne} mr={"1rem"} />
-              <Text>Service Selection and Implemetation</Text>
+              <Text fontSize={"1rem"} fontWeight={"semibold"}>
+                System Selection and Implemetation
+              </Text>
             </Box>
           </li>
           <li>
             <Box as="span" display={"flex"} alignItems={"center"} mb={"1.5rem"}>
               <Image w={"1.5rem"} src={serviceTwo} mr={"1rem"} />
-              <Text>Business process automation and change management</Text>
+              <Text fontSize={"1rem"} fontWeight={"semibold"}>
+                Business process automation and change management
+              </Text>
             </Box>
           </li>
           <li>
             <Box as="span" display={"flex"} alignItems={"center"} mb={"1.5rem"}>
-              <Image w={"2rem"} src={serviceThree} mr={"1rem"} />
-              <Text>Business Intelligence and Dashboard management</Text>
+              <Image
+                w={"2rem"}
+                src={serviceThree}
+                mr={{ base: "unset", md: "0.7rem" }}
+                ml={{ base: "unset", md: "-0.2rem" }}
+                alignSelf={"flex-start"}
+              />
+              <Text fontSize={"1rem"} fontWeight={"semibold"}>
+                Business Intelligence Dashboard and management
+              </Text>
             </Box>
           </li>
           <li>
             <Box as="span" display={"flex"} alignItems={"center"} mb={"1.5rem"}>
-              <Image w={"2rem"} src={serviceFour} mr={"1rem"} />
-              <Text>Training and Documentation</Text>
+              <Image
+                w={"2rem"}
+                src={serviceFour}
+                mr={{ base: "unset", md: "0.7rem" }}
+                ml={{ base: "unset", md: "-0.2rem" }}
+              />
+              <Text fontSize={"1rem"} fontWeight={"semibold"}>
+                Training and Documentation
+              </Text>
             </Box>
           </li>
           <li>
             <Box as="span" display={"flex"} alignItems={"center"} mb={"1.5rem"}>
-              <Image w={"2rem"} src={serviceFive} mr={"1rem"} />
-              <Text>Managed Services</Text>
+              <Image
+                w={"2rem"}
+                src={serviceFive}
+                mr={{ base: "unset", md: "0.7rem" }}
+                ml={{ base: "unset", md: "-0.2rem" }}
+              />
+              <Text fontSize={"1rem"} fontWeight={"semibold"}>
+                Managed Services
+              </Text>
             </Box>
           </li>
         </Box>

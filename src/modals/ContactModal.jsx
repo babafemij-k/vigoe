@@ -99,12 +99,26 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                     name="firstName"
                     id="firstName"
                     type="text"
+                    isRequired
                     placeholder="First Name"
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
                     onChange={formik.handleChange}
                     value={formik.values.firstName}
+                  />
+                </FormControl>
+                <FormControl mr={3}>
+                  <Input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.lastName}
                   />
                 </FormControl>
                 <FormControl mr={3}>
@@ -118,6 +132,27 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                     placeholderTextColor="#437C90"
                     onChange={formik.handleChange}
                     value={formik.values.email}
+                  />
+                </FormControl>
+              </Flex>
+
+              <Flex
+                mb={3}
+                flexDirection={"column"}
+                gap={"1rem"}
+                w={{ base: "100%", md: "unset" }}
+              >
+                <FormControl mr={3}>
+                  <Input
+                    name="companyName"
+                    id="companyName"
+                    type="text"
+                    placeholder="Company Name"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.companyName}
                   />
                 </FormControl>
                 <FormControl mr={3}>
@@ -138,40 +173,6 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                     <option value="5">5</option>
                     <option value=">5">Greater than 5</option>
                   </Select>
-                </FormControl>
-              </Flex>
-
-              <Flex
-                mb={3}
-                flexDirection={"column"}
-                gap={"1rem"}
-                w={{ base: "100%", md: "unset" }}
-              >
-                <FormControl mr={3}>
-                  <Input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Last Name"
-                    fontSize={"0.9rem"}
-                    borderColor="#437C90"
-                    placeholderTextColor="#437C90"
-                    onChange={formik.handleChange}
-                    value={formik.values.lastName}
-                  />
-                </FormControl>
-                <FormControl mr={3}>
-                  <Input
-                    name="companyName"
-                    id="companyName"
-                    type="text"
-                    placeholder="Company Name"
-                    fontSize={"0.9rem"}
-                    borderColor="#437C90"
-                    placeholderTextColor="#437C90"
-                    onChange={formik.handleChange}
-                    value={formik.values.companyName}
-                  />
                 </FormControl>
                 <FormControl mr={3}>
                   <Input

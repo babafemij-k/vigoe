@@ -94,7 +94,7 @@ export default function RequestContractorModal({
                 mb={3}
                 flexDirection={"column"}
                 gap={"1rem"}
-                w={{ base: "100%", md: "unset" }}
+                w={{ base: "100%", md: "45%" }}
               >
                 <FormControl mr={3}>
                   <Input
@@ -111,10 +111,10 @@ export default function RequestContractorModal({
                 <FormControl mr={3}>
                   <Input
                     type="text"
+                    placeholder="Last Name"
+                    id="lastName"
                     isRequired
-                    id="companyName"
-                    name="companyName"
-                    placeholder="Company Name"
+                    name="lastName"
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
@@ -156,10 +156,10 @@ export default function RequestContractorModal({
                 <FormControl mr={3}>
                   <Input
                     type="text"
-                    placeholder="Last Name"
-                    id="lastName"
                     isRequired
-                    name="lastName"
+                    id="companyName"
+                    name="companyName"
+                    placeholder="Company Name"
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
@@ -222,6 +222,162 @@ export default function RequestContractorModal({
               </Button>
             </Flex>
           </form>
+          {/* <form onSubmit={formik.handleSubmit}>
+            <Flex
+              justifyContent={{ md: "space-between" }}
+              flexDirection={{ base: "column", md: "row" }}
+              alignItems={{ base: "flex-start" }}
+              px={{ base: "2rem" }}
+            >
+              <Flex
+                mb={3}
+                flexDirection={"column"}
+                gap={"1rem"}
+                w={{ base: "100%", md: "unset" }}
+              >
+                <FormControl mr={3}>
+                  <Input
+                    name="firstName"
+                    id="firstName"
+                    type="text"
+                    isRequired
+                    placeholder="First Name"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.firstName}
+                  />
+                </FormControl>
+                <FormControl mr={3}>
+                  <Input
+                    type="text"
+                    placeholder="Last Name"
+                    id="lastName"
+                    isRequired
+                    name="lastName"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                  />
+                </FormControl>
+                <FormControl mr={3}>
+                  <Select
+                    name="companySize"
+                    id="companySize"
+                    placeholder="Company Size"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.companySize}
+                  >
+                    <option value="System Implementation">
+                      System Implementation
+                    </option>
+                    <option value="Process Automation">
+                      Process Automation
+                    </option>
+                    <option value="Business Intelligence & Dashboards">
+                      Business Intelligence & Dashboards
+                    </option>
+                    <option value="Business Process Change">
+                      Business Process Change
+                    </option>
+                    <option value="Other">Other</option>
+                  </Select>
+                </FormControl>
+              </Flex>
+
+              <Flex
+                mb={3}
+                flexDirection={"column"}
+                gap={"1rem"}
+                w={{ base: "100%", md: "unset" }}
+              >
+                <FormControl mr={3}>
+                  <Input
+                    name="companyName"
+                    id="companyName"
+                    type="text"
+                    placeholder="Company Name"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.companyName}
+                  />
+                </FormControl>
+                <FormControl mr={3}>
+                  <Select
+                    name="companySize"
+                    id="companySize"
+                    placeholder="Company Size"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.companySize}
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value=">5">Greater than 5</option>
+                  </Select>
+                </FormControl>
+                <FormControl mr={3}>
+                  <Select
+                    name="companySize"
+                    id="companySize"
+                    placeholder="Company Size"
+                    fontSize={"0.9rem"}
+                    borderColor="#437C90"
+                    placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.companySize}
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value=">5">Greater than 5</option>
+                  </Select>
+                </FormControl>
+              </Flex>
+            </Flex>
+            <Flex flexDirection={{ base: "column" }} px={{ base: "2rem" }}>
+              <FormControl mb={3}>
+                <Textarea
+                  name="messageHeading"
+                  id="messageHeading"
+                  placeholder="Message Heading"
+                  fontSize={"0.9rem"}
+                  borderColor="#437C90"
+                  placeholderTextColor="#437C90"
+                  onChange={formik.handleChange}
+                  value={formik.values.messageHeading}
+                />
+              </FormControl>
+              <FormControl mb={3}>
+                <Textarea
+                  name="messageBody"
+                  id="messageBody"
+                  placeholder="Message Body"
+                  fontSize={"0.9rem"}
+                  borderColor="#437C90"
+                  placeholderTextColor="#437C90"
+                  onChange={formik.handleChange}
+                  value={formik.values.messageBody}
+                />
+              </FormControl>
+              <Button colorScheme="blue" type="submit">
+                Submit
+              </Button>
+            </Flex>
+          </form> */}
         </ModalBody>
       </ModalContent>
     </Modal>
