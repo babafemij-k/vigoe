@@ -70,8 +70,8 @@ export default function Services() {
               <Image
                 w={"2rem"}
                 src={serviceThree}
-                mr={{ base: "unset", md: "0.7rem" }}
-                ml={{ base: "unset", md: "-0.2rem" }}
+                mr={{ base: "0.8rem", md: "0.7rem" }}
+                ml={{ base: "-0.1rem", md: "-0.2rem" }}
                 alignSelf={"flex-start"}
               />
               <Text fontSize={"1rem"} fontWeight={"semibold"}>
@@ -84,8 +84,8 @@ export default function Services() {
               <Image
                 w={"2rem"}
                 src={serviceFour}
-                mr={{ base: "unset", md: "0.7rem" }}
-                ml={{ base: "unset", md: "-0.2rem" }}
+                mr={{ base: "0.8rem", md: "0.7rem" }}
+                ml={{ base: "-0.1rem", md: "-0.2rem" }}
               />
               <Text fontSize={"1rem"} fontWeight={"semibold"}>
                 Training and Documentation
@@ -97,8 +97,8 @@ export default function Services() {
               <Image
                 w={"2rem"}
                 src={serviceFive}
-                mr={{ base: "unset", md: "0.7rem" }}
-                ml={{ base: "unset", md: "-0.2rem" }}
+                mr={{ base: "0.8rem", md: "0.7rem" }}
+                ml={{ base: "-0.1rem", md: "-0.2rem" }}
               />
               <Text fontSize={"1rem"} fontWeight={"semibold"}>
                 Managed Services
