@@ -106,6 +106,8 @@ export default function RequestContractorModal({
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.firstName}
                   />
                 </FormControl>
                 <FormControl mr={3}>
@@ -118,6 +120,8 @@ export default function RequestContractorModal({
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.lastName}
                   />
                 </FormControl>
                 <FormControl mr={3}>
@@ -129,6 +133,8 @@ export default function RequestContractorModal({
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.projectType}
                   >
                     <option value="System Implementation">
                       System Implementation
@@ -163,6 +169,8 @@ export default function RequestContractorModal({
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.companyName}
                   />
                 </FormControl>
                 <FormControl mr={3}>
@@ -175,6 +183,8 @@ export default function RequestContractorModal({
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.industry}
                   />
                 </FormControl>
                 <FormControl mr={3}>
@@ -187,6 +197,8 @@ export default function RequestContractorModal({
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
+                    onChange={formik.handleChange}
+                    value={formik.values.workScheduleType}
                   >
                     <option value="Remote">Remote</option>
                     <option value="Hybrid">Hybrid</option>
@@ -205,6 +217,8 @@ export default function RequestContractorModal({
                   fontSize={"0.9rem"}
                   borderColor="#437C90"
                   placeholderTextColor="#437C90"
+                  onChange={formik.handleChange}
+                  value={formik.values.contractLength}
                 />
               </FormControl>
               <FormControl mb={3}>
@@ -215,6 +229,8 @@ export default function RequestContractorModal({
                   fontSize={"0.9rem"}
                   borderColor="#437C90"
                   placeholderTextColor="#437C90"
+                  onChange={formik.handleChange}
+                  value={formik.values.additionalInformation}
                 />
               </FormControl>
               <Button colorScheme="blue" type="submit">
