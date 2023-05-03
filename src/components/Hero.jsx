@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image, Heading } from "@chakra-ui/react";
 import heroImage from "../assets/heroImage.png";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -21,6 +22,11 @@ export default function Hero() {
         mx={{ base: 4, md: 0 }}
         w={{ base: "unset", md: "30%" }}
         fontFamily={"AvenirNextLTPro-Bold"}
+        as={motion.p}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition="0.5s ease"
+        // animate={{ x: 100 }}
       >
         Let's turn your vision into profit
       </Text>

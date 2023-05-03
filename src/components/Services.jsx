@@ -7,6 +7,8 @@ import serviceThree from "../assets/service-three.svg";
 import serviceFour from "../assets/service-four.svg";
 import serviceFive from "../assets/service-five.svg";
 
+import { motion } from "framer-motion";
+
 export default function Services() {
   return (
     <Flex
@@ -25,10 +27,14 @@ export default function Services() {
     >
       <Box flex={{ base: "0", md: "1" }} p={{ base: "6", md: "12" }}>
         <Heading
-          as={"h2"}
+          // as={"h2"}
           size={"xl"}
           mb={"8"}
           fontFamily={"AvenirNextLTPro-Bold"}
+          as={motion.p}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition="0.5s linear"
         >
           Our Services
         </Heading>
@@ -37,11 +43,7 @@ export default function Services() {
           providing world class technology implementation solutions. Our
           offerings include:
         </Text>
-        <Box
-          as="ul"
-          listStyleType={"none"}
-          ml={{ base: "0.5rem", md: "unset" }}
-        >
+        <Box listStyleType={"none"} ml={{ base: "0.5rem", md: "unset" }}>
           <li>
             <Box as="span" display={"flex"} alignItems={"center"} mb={"1.5rem"}>
               <Image w={"1.5rem"} src={serviceOne} mr={"1rem"} />

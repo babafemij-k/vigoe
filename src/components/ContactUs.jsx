@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 export default function AboutUs({ onContactClick }) {
   return (
@@ -53,6 +54,10 @@ export default function AboutUs({ onContactClick }) {
             color={"#0141FF"}
             variant="outline"
             onClick={onContactClick}
+            as={motion.button}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            _hover={{ backgroundColor: "#fff" }}
           >
             Contact Us
           </Button>

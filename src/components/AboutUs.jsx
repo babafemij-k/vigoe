@@ -13,6 +13,8 @@ import logo10 from "../assets/Workday.svg";
 import logo11 from "../assets/EY.svg";
 import logo12 from "../assets/Deloitte.svg";
 
+import { motion } from "framer-motion";
+
 export default function AboutUs() {
   return (
     <Flex
@@ -24,10 +26,14 @@ export default function AboutUs() {
       mt={{ base: "-0.5rem" }}
     >
       <Heading
-        as={"h2"}
+        // as={"h2"}
         size={"xl"}
         mb={"8"}
         fontFamily={"AvenirNextLTPro-Bold"}
+        as={motion.p}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition="0.5s linear"
       >
         Why choose us?
       </Heading>

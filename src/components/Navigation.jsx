@@ -20,6 +20,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import logo from "../assets/logo.png";
+import { motion, motionValue } from "framer-motion";
 
 function Navigation({
   onContactClick,
@@ -45,15 +46,53 @@ function Navigation({
         <>
           <Spacer />
           <Flex ml={"-110px"}>
-            <Link mr="4">Our Services</Link>
-            <Link mr="4">Our Process</Link>
-            <Link mr="4">About Us</Link>
-            <Link mr="4" onClick={onRequestContractor}>
+            <Link
+              as={motion.button}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              mr="5"
+              _hover={{ textDecoration: "none" }}
+            >
+              Our Services
+            </Link>
+            <Link
+              mr="5"
+              as={motion.button}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              _hover={{ textDecoration: "none" }}
+            >
+              Our Process
+            </Link>
+            <Link
+              mr="5"
+              as={motion.button}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              _hover={{ textDecoration: "none" }}
+            >
+              About Us
+            </Link>
+            <Link
+              mr="5"
+              onClick={onRequestContractor}
+              as={motion.button}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              _hover={{ textDecoration: "none" }}
+            >
               Request a Contractor
             </Link>
           </Flex>
           <Spacer />
-          <Button onClick={onContactClick} bg="#0141FF">
+          <Button
+            as={motion.button}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={onContactClick}
+            bg="#0141FF"
+            _hover={{ backgroundColor: "#0141FF" }}
+          >
             Contact Us
           </Button>
         </>

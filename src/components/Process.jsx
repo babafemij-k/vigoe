@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Box, Image, Heading, Text, Spacer } from "@chakra-ui/react";
 import processIcon from "../assets/our-process.svg";
+import { motion } from "framer-motion";
 
 export default function Process() {
   return (
@@ -22,10 +23,14 @@ export default function Process() {
         mr={{ base: "", md: "3rem" }}
       >
         <Heading
-          as={"h2"}
+          // as={"h2"}
           size={"xl"}
           mb={"8"}
           fontFamily={"AvenirNextLTPro-Bold"}
+          as={motion.p}
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition="0.5s linear"
         >
           Our Process
         </Heading>
