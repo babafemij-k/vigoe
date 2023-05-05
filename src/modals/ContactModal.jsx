@@ -109,6 +109,7 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                 <FormControl mr={3}>
                   <Input
                     type="text"
+                    isRequired
                     id="lastName"
                     name="lastName"
                     placeholder="Last Name"
@@ -124,6 +125,7 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                     name="email"
                     id="email"
                     type="email"
+                    isRequired
                     placeholder="Work Email"
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
@@ -145,6 +147,7 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                     name="companyName"
                     id="companyName"
                     type="text"
+                    isRequired
                     placeholder="Company Name"
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
@@ -159,6 +162,7 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                     id="companySize"
                     placeholder="Company Size"
                     fontSize={"0.9rem"}
+                    isRequired
                     borderColor="#437C90"
                     placeholderTextColor="#437C90"
                     onChange={formik.handleChange}
@@ -177,6 +181,7 @@ export default function ContactModal({ showModal, handleCloseModal }) {
                     name="jobTitle"
                     id="jobTitle"
                     type="text"
+                    isRequired
                     placeholder="Job title"
                     fontSize={"0.9rem"}
                     borderColor="#437C90"
