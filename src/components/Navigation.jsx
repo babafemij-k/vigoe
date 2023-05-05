@@ -21,6 +21,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/logo.png";
+import test from "../assets/test.svg";
 import { motion, motionValue } from "framer-motion";
 
 function Navigation({
@@ -42,8 +43,9 @@ function Navigation({
       color={"white"}
     >
       <Image
-        src={logo}
+        src={test}
         alt="Logo"
+        mt={"-0.3rem"}
         w={{ base: "75%", md: "18rem" }}
         h={{ base: "75%", md: "unset" }}
       />
@@ -80,6 +82,18 @@ function Navigation({
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               _hover={{ textDecoration: "none" }}
+              data-target="process"
+              onClick={(e) => {
+                e.preventDefault();
+                const target = document.querySelector(
+                  `[id="${e.target.dataset.target}"]`
+                );
+                const offset = -70; // change this value to adjust the scroll position
+                window.scrollTo({
+                  top: target.offsetTop + offset,
+                  behavior: "smooth",
+                });
+              }}
             >
               Our Process
             </Link>
@@ -89,6 +103,18 @@ function Navigation({
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               _hover={{ textDecoration: "none" }}
+              data-target="about"
+              onClick={(e) => {
+                e.preventDefault();
+                const target = document.querySelector(
+                  `[id="${e.target.dataset.target}"]`
+                );
+                const offset = -70; // change this value to adjust the scroll position
+                window.scrollTo({
+                  top: target.offsetTop + offset,
+                  behavior: "smooth",
+                });
+              }}
             >
               About Us
             </Link>
