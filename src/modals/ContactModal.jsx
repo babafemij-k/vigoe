@@ -54,7 +54,7 @@ export default function ContactModal({ showModal, handleCloseModal }) {
       isOpen={showModal}
       onClose={handleCloseModal}
       scrollBehavior={"outside"}
-      size={{ base: "full", md: "lg" }}
+      size={{ base: "xl", md: "lg" }}
     >
       <ModalOverlay />
       <ModalContent w={{ base: "90%" }} minW={{ md: "40%" }} py={"3rem"}>
