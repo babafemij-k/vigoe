@@ -49,7 +49,7 @@ export default function RequestContractorModal({
       const messageHeading = `Request for Contractor - ${projectType}`;
       const messageBody = `I am interested in hiring a contractor for ${projectType} work for my company, ${companyName}. The work schedule type is ${workScheduleType}, and I am looking for a contractor with expertise in ${industry}. I need the contract to last for ${contractLength}. Please let me know if you have any contractors available and their rates. Thank you.\n${additionalInformation}\nBest regards,\n${firstName} ${lastName}`;
 
-      const mailtoLink = `mailto:babafemijk@gmail.com,cc:olaolujkb21@gmail.com?subject=${encodeURIComponent(
+      const mailtoLink = `mailto:Sam.adeoya@vigoeconsulting.com,cc:Ade.onagbola@vigoeconsulting.com?subject=${encodeURIComponent(
         messageHeading
       )}&body=${encodeURIComponent(messageBody)}`;
       window.location.href = mailtoLink;

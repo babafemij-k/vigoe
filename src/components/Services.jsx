@@ -17,6 +17,7 @@ export default function Services() {
       //   minHeight={"80vh"}
       //   position={"relative"}
       //   ml={{ base: "", md: "6rem" }}
+      id="services"
       flexDirection={{ base: "column", md: "row" }}
       color={"white"}
       minHeight={"85vh"}

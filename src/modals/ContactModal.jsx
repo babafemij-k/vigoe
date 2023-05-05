@@ -40,9 +40,7 @@ export default function ContactModal({ showModal, handleCloseModal }) {
       const messageHeading = document.getElementById("messageHeading").value;
       const messageBody = document.getElementById("messageBody").value;
 
-      //   const mailtoLink = `mailto:${"babafemijk@gmail.com"}?subject=${messageHeading}&body=First%20Name:%20${firstName}%0D%0ALast%20Name:%20${lastName}%0D%0AEmail:%20${email}%0D%0ACompany%20Size:%20${companySize}%0D%0ACompany%20Name:%20${companyName}%0D%0AJob%20Title:%20${jobTitle}%0D%0AMessage%20Heading:%20${messageHeading}%0D%0AMessage%20Body:%20${messageBody}`;
-
-      const mailtoLink = `mailto:babafemijk@gmail.com,cc:${"olaolujkb21@gmail.com"}?subject=${encodeURIComponent(
+      const mailtoLink = `mailto:Sam.adeoya@vigoeconsulting.com,cc:${"Ade.onagbola@vigoeconsulting.com"}?subject=${encodeURIComponent(
         messageHeading
       )}&body=${encodeURIComponent(
         `Hello,\n\nMy name is ${firstName} ${lastName} and I'm interested in your company. Here's some information about me:\n\nEmail: ${email}\nCompany Size: ${companySize}\nCompany Name: ${companyName}\nJob Title: ${jobTitle}\n\n${messageBody}\nThank you for your time and consideration. We look forward to hearing back from you soon.\nBest regards,\n${firstName}`

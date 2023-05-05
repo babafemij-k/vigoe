@@ -12,6 +12,7 @@ export default function Process() {
       background={"white"}
       py={{ base: "3rem", md: "5rem" }}
       px={{ base: "2rem", md: "5rem" }}
+      id="process"
     >
       <Box display={"flex"} justifyContent={"center"}>
         <Image w={"80%"} src={processIcon} alt="process-icon" />

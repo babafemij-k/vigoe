@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Flex,
   Spacer,
@@ -57,7 +57,20 @@ function Navigation({
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               mr="5"
+              href="#services"
               _hover={{ textDecoration: "none" }}
+              data-target="services"
+              onClick={(e) => {
+                e.preventDefault();
+                const target = document.querySelector(
+                  `[id="${e.target.dataset.target}"]`
+                );
+                const offset = -70; // change this value to adjust the scroll position
+                window.scrollTo({
+                  top: target.offsetTop + offset,
+                  behavior: "smooth",
+                });
+              }}
             >
               Our Services
             </Link>
@@ -126,9 +139,63 @@ function Navigation({
                 <DrawerHeader>Menu</DrawerHeader>
                 <DrawerBody>
                   <VStack spacing="4">
-                    <Link>Our Services</Link>
-                    <Link>Our Process</Link>
-                    <Link>About Us</Link>
+                    <Link
+                      data-target="services"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onClose();
+                        const target = document.querySelector(
+                          `[id="${e.target.dataset.target}"]`
+                        );
+                        const offset = -70; // change this value to adjust the scroll position
+                        setTimeout(() => {
+                          window.scrollTo({
+                            top: target.offsetTop + offset,
+                            behavior: "smooth",
+                          });
+                        }, 200);
+                      }}
+                    >
+                      Our Services
+                    </Link>
+                    <Link
+                      data-target="process"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onClose();
+                        const target = document.querySelector(
+                          `[id="${e.target.dataset.target}"]`
+                        );
+                        const offset = -70; // change this value to adjust the scroll position
+                        setTimeout(() => {
+                          window.scrollTo({
+                            top: target.offsetTop + offset,
+                            behavior: "smooth",
+                          });
+                        }, 200);
+                      }}
+                    >
+                      Our Process
+                    </Link>
+                    <Link
+                      data-target="about"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onClose();
+                        const target = document.querySelector(
+                          `[id="${e.target.dataset.target}"]`
+                        );
+                        const offset = -70; // change this value to adjust the scroll position
+                        setTimeout(() => {
+                          window.scrollTo({
+                            top: target.offsetTop + offset,
+                            behavior: "smooth",
+                          });
+                        }, 200);
+                      }}
+                    >
+                      About Us
+                    </Link>
                     <Link onClick={onRequestContractor}>
                       Request a Contractor
                     </Link>

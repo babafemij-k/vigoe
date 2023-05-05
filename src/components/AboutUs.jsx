@@ -24,6 +24,7 @@ export default function AboutUs() {
       px={{ base: "2rem", md: "10rem" }}
       flexDirection={"column"}
       mt={{ base: "-0.5rem" }}
+      id="about"
     >
       <Heading
         // as={"h2"}
